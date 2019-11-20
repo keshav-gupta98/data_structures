@@ -69,8 +69,6 @@ return head;
 }
 
 
-
-
 int main()
 {
 	struct node *head = NULL;

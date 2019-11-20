@@ -109,28 +109,3 @@ int diam(struct node *root)
 {
     return 1 + height( root -> left ) + height( root -> right );
 }
-int main()
-{
-	struct node *root = NULL;
-	root = insert(root,19);
-	insert(root,15);
-	insert(root,17);
-	insert(root,18);
-	insert(root,4);
-	insert(root,21);
-	insert(root,5);
-	insert(root,6);
-	insert(root,90);
-	insert(root,-67);
-	insert(root,-23);
-	insert(root,-21);
-	insert(root,-4);
-	insert(root,45);
-	insert(root,23);
-	inorder( root );
-	printf("\n%d %d \n",min(root),max(root));
-	root  = delmin(root);
-	root = delmax(root);
-	inorder(root);
-	return 0;
-}
